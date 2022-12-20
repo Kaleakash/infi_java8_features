@@ -1,0 +1,23 @@
+package com;
+
+class Outer {
+	int a;
+	void dis1() {
+		System.out.println("This is outer class non static method");
+	}
+	
+	class Inner {
+		void dis2() {
+			System.out.println("This is inner class method");
+		}
+	}
+}
+
+public class InnerClassExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

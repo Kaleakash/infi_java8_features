@@ -1,0 +1,30 @@
+package com;
+interface A {
+	void dis1();
+	default void dis2() {
+		System.out.println("A interface default dis2 method method impl");
+	}
+	default void dis3() {
+		System.out.println("A interface default dis2 method method impl");
+	}
+	static void dis4() {
+		System.out.println("A interface static method");
+	}
+}
+class B implements A {
+	public void dis1() {
+		System.out.println("A interface dis1 method");
+	}
+	public void dis3() {
+		System.out.println(" B class provided body fro dis3 default method implementation - override");
+	}
+}
+public class Java8InterfaceExample {
+	public static void main(String[] args) {
+		B obj1 = new B();
+		obj1.dis1();
+		obj1.dis2();
+		obj1.dis3();
+		A.dis4();
+	}
+}

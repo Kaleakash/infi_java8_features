@@ -1,0 +1,15 @@
+package com;
+interface A {
+	void dis1();
+}
+class B implements A {
+	public void dis1() {
+		System.out.println("A interface method");
+	}
+}
+public class Java8InterfaceExample {
+	public static void main(String[] args) {
+		B obj1 = new B();
+		obj1.dis1();
+	}
+}

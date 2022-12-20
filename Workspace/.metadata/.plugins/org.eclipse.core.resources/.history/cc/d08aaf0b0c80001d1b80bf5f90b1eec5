@@ -1,0 +1,7 @@
+package com;
+
+public class Java8InterfaceExample {
+	public static void main(String[] args) {
+		
+	}
+}

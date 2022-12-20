@@ -1,0 +1,12 @@
+package com;
+interface Info {
+	void dis1();
+}
+public class FuntionalInterfaceExample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

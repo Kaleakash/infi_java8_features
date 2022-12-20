@@ -1,0 +1,13 @@
+package com;
+interface Sample {
+	void display();
+}
+//1st approach 
+class SampleImp implements Sample {
+
+}
+public class LambdaExpressionExample {
+	public static void main(String[] args) {
+		
+	}
+}

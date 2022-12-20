@@ -1,0 +1,37 @@
+package com;
+
+class Outer {
+	int a;
+	void dis1() {
+		System.out.println("This is outer class non static method");
+	}
+	
+	class Inner {
+		void dis2() {
+			System.out.println("This is inner class method");
+		}
+	}
+	
+	static int b;
+	
+	static void dis3() {
+		System.out.println("This is outer class static method");
+	}
+	
+	static class InnerStatic {
+		void dis4() {
+			System.out.println("This is static inner class method");
+		}
+	}
+}
+
+public class InnerClassExample {
+
+	public static void main(String[] args) {
+	Outer out = new Outer();
+	out.dis1();
+	out.dis3();
+	Outer.dis3();
+	}
+
+}

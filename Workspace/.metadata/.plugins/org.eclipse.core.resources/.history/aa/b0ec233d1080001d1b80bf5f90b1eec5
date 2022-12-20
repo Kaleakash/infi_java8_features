@@ -1,0 +1,16 @@
+package com;
+interface Sample {
+	void display();
+}
+//1st approach 
+class SampleImp implements Sample {
+	@Override
+	public void display() {
+		System.out.println("SampleImp providing body for display method");
+	}
+}
+public class LambdaExpressionExample {
+	public static void main(String[] args) {
+		
+	}
+}

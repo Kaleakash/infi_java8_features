@@ -1,0 +1,29 @@
+package com;
+interface Sample {
+	void display();
+}
+//1st approach 
+class SampleImp implements Sample {
+	@Override
+	public void display() {
+		System.out.println("SampleImp providing body for display method");
+	}
+}
+public class LambdaExpressionExample {
+	public static void main(String[] args) {
+		//1st approach 
+		Sample s1 = new SampleImp();
+		s1.display();
+		
+		//2nd approach Anonymous inner class
+		
+		Sample s2 = new Sample() {
+			@Override
+			public void display() {
+				System.out.println("Providing the body for Sample interface using anonymous inner class");
+			}
+		};
+		s2.display();
+		
+	}
+}
