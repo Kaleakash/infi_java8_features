@@ -1,0 +1,32 @@
+package com;
+
+import java.util.function.Function;
+
+//class MyFunction implements Function<String, String>{
+//	@Override
+//	public String apply(String name) {
+//		
+//		return "Welcome Mr "+name;
+//	}
+//}
+public class PreDefinedFunctionalInterfaces {
+
+	public static void main(String[] args) {
+		// without Lambda Expression 
+//		MyFunction ff1 = new MyFunction();
+//		System.out.println(ff1.apply("Ravi"));
+//		
+		// with Lambda Expression 
+		
+		Function<String, String> ff2 = (name)->"Welcome Miss "+name;
+		
+		System.out.println(ff2.apply("Reeta"));
+		
+		Function<String, String> ff3 = (name)->name.toUpperCase();
+		System.out.println(ff3.apply("Mahesh"));
+		
+		Function<String, String> ff4 = (name)->name.toLowerCase();
+		System.out.println(ff4.apply("Mahesh"));
+	}
+
+}

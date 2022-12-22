@@ -1,0 +1,21 @@
+package com;
+interface Hello {
+	public void info();
+}
+interface Message{
+	public void sayHello(String name);
+}
+interface Operation {
+	public int add(int x, int y);
+}
+public class LambdaExpressionAnotherExample {
+
+	public static void main(String[] args) {
+		Hello h1 = ()->System.out.println("This is info interface in lambda style");
+		h1.info();
+		
+		Message m1 = (name)->System.out.println("Say hello method "+name);
+		m1.sayHello("Ravi");
+	}
+
+}
