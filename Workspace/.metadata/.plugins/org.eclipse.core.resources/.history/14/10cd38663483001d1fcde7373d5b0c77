@@ -1,0 +1,14 @@
+package com;
+interface Info {
+	public String sayHello(String name);
+}
+public class MethodReferenceDemo {
+
+	public static void main(String[] args) {
+		// using lambda expression 
+		Info obj1 = (name)->"Welcomer user "+name;
+		System.out.println(obj1.sayHello("Ravi"));
+
+	}
+
+}

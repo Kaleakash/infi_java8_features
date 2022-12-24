@@ -1,0 +1,12 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamIntermediateAndTerminalOperators {
+	public static void main(String[] args) {
+		List<String> ll = new ArrayList<String>();
+		ll.add("Ravi");ll.add("Ajay");ll.add("Vijay");ll.add("Reeta");ll.add("Mahesh");
+		ll.add("Ramesh");ll.add("Raju");ll.add("Lokesh");ll.add("Ram");ll.add("Rai");	
+	}
+}

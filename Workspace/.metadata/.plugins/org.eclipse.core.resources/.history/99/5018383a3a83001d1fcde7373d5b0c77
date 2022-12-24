@@ -1,0 +1,17 @@
+package com;
+
+public class Employee {
+	
+	private Employee() {}
+	void display() {
+		System.out.println("display method");
+		
+	}
+	
+	// factory method. which help to create the object. 
+	public static Employee instanceOf() {
+		//coding 
+		Employee emp = new Employee();
+		return emp;
+	}
+}

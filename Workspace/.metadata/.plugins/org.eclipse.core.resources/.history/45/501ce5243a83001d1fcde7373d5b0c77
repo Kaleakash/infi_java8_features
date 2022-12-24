@@ -1,0 +1,16 @@
+package com;
+
+public class Employee {
+	
+	private Employee() {}
+	void display() {
+		System.out.println("display method");
+		
+	}
+	
+	public static Employee instanceOf() {
+		//coding 
+		Employee emp = new Employee();
+		return emp;
+	}
+}

@@ -1,0 +1,9 @@
+package com;
+
+public class Employee {
+
+	void display() {
+		System.out.println("display method");
+		
+	}
+}

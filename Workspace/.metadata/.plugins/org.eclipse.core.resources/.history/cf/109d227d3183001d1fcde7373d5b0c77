@@ -1,0 +1,23 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamIntermediateAndTerminalOperators {
+	public static void main(String[] args) {
+		List<String> ll = new ArrayList<String>();
+		ll.add("Ravi");ll.add("Ajay");ll.add("Vijay");ll.add("Reeta");ll.add("Mahesh");
+		ll.add("Ramesh");ll.add("Raju");ll.add("Lokesh");ll.add("Ram");ll.add("Rai");
+		
+		// converting list to stream and use intermediate operator and then terminal operator 
+		// map is intermediate operator or function 
+		//ll.stream().map(v->v.toLowerCase()).forEach(v->System.out.print(v+" "));
+		//mapToInt
+		//ll.stream().mapToInt(v->v.length()).forEach(l->System.out.println("Each name length "+l));
+		
+		// filter : intermediate operator 
+		
+		//ll.stream().filter(v->v.startsWith("R")).forEach(e->System.out.print(" "+e));
+		ll.stream().filter(v->v.contains("e")).forEach(e->System.out.print(" "+e));
+	}
+}

@@ -1,0 +1,19 @@
+package abc;
+interface Info {
+	public String sayHello(String name);
+}
+public class MethodReferenceDemo {
+
+	public static void main(String[] args) {
+		// using lambda expression 
+		Info obj1 = (name)->"Welcome user "+name;
+		System.out.println(obj1.sayHello("Ravi"));
+
+		Info obj2 = (name)->"Hi "+name;
+		System.out.println(obj2.sayHello("Ravi"));
+		
+		Info obj3 = (name)->"Hello"+name;
+		System.out.println(obj3.sayHello("Ravi"));
+	}
+
+}
